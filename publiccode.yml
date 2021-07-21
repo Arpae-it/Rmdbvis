@@ -8,21 +8,20 @@ categories:
 description:
   en:
     features:
-      - Make wind roses from simple csv files
+      - Read and export MS Access mdb online
     genericName: R + Shiny app
-    localisedName: windrose
+    localisedName: Rmdbvis
     longDescription: |
-      A very simple tool to do something not so easy when using standard
-      spreadsheets: windroses. Based on the majestic openair package
-      (https://cran.r-project.org/web/packages/openair/index.html), this simple
-      tools allows the user to upload a easily formatted  csv file (a demo file
-      is provided) and automatically produces a 24h wind rose, a daylight wind
-      rose and a nighttime wind rose. Some basic options are provided. The
-      images can be exported as png. A working demo can be seen at:
-      https://arpae.shinyapps.io/windrosebollettini/
+      Rmdbvis is a Shiny script written in R which allows the user to upload a MS Access db to the organization's server and allows the user to choose one table from the db, 
+      viewing it online and exporting it to a .csv file or directly to memory. With a simple customisation, it allows the user to directly write the table to a personal Gdrive.
+      In such a case some lines of code must be edited along with the Google secrets to access the organization's Drive. Just substitute the XXXX with your secrets.
+      options("googleAuthR.webapp.client_id" = "XXXXX.apps.googleusercontent.com")
+options("googleAuthR.webapp.client_secret" = "XXXX")
+options("googleAuthR.scopes.selected" = "https://www.googleapis.com/auth/drive")
+#Please specify a folder where you'd like to store temporary files
+cart_temp <- "/XXX/"
     shortDescription: |
-      An automatic Shiny + R tool to produce wind roses starting from very
-      simply formatted csv files
+      A tool to view and export MDB files without the need to install MS Access
 developmentStatus: stable
 it:
   conforme:
@@ -48,7 +47,7 @@ maintenance:
   contacts:
     - name: Paolo Veronesi
   type: community
-name: mappatore
+name: Rmdbvis
 platforms:
   - linux
   - windows
@@ -56,4 +55,4 @@ platforms:
 releaseDate: '2021-07-21'
 softwareType: standalone/web
 softwareVersion: stable
-url: 'https://github.com/Arpae-it/windrose'
+url: 'https://github.com/Arpae-it/Rmdbvis'
