@@ -1,0 +1,59 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+categories:
+  - data-visualization
+description:
+  en:
+    features:
+      - Make wind roses from simple csv files
+    genericName: R + Shiny app
+    localisedName: windrose
+    longDescription: |
+      A very simple tool to do something not so easy when using standard
+      spreadsheets: windroses. Based on the majestic openair package
+      (https://cran.r-project.org/web/packages/openair/index.html), this simple
+      tools allows the user to upload a easily formatted  csv file (a demo file
+      is provided) and automatically produces a 24h wind rose, a daylight wind
+      rose and a nighttime wind rose. Some basic options are provided. The
+      images can be exported as png. A working demo can be seen at:
+      https://arpae.shinyapps.io/windrosebollettini/
+    shortDescription: |
+      An automatic Shiny + R tool to produce wind roses starting from very
+      simply formatted csv files
+developmentStatus: stable
+it:
+  conforme:
+    gdpr: false
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: false
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: false
+    pagopa: false
+    spid: false
+  riuso:
+    codiceIPA: arpa
+legal:
+  license: AGPL-3.0-or-later
+localisation:
+  availableLanguages:
+    - en
+  localisationReady: false
+maintenance:
+  contacts:
+    - name: Paolo Veronesi
+  type: community
+name: mappatore
+platforms:
+  - linux
+  - windows
+  - mac
+releaseDate: '2021-07-21'
+softwareType: standalone/web
+softwareVersion: stable
+url: 'https://github.com/Arpae-it/windrose'
