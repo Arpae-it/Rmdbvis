@@ -8,7 +8,7 @@ categories:
 description:
   en:
     features:
-      - Read and export MS Access mdb online
+      - Reading and exporting MS Access mdb online
     genericName: R + Shiny app
     localisedName: Rmdbvis
     longDescription: |
