@@ -6,6 +6,7 @@ library(shinyjs)
 library(shinydashboard)
 library(googledrive)
 library(googleAuthR)
+library(Hmisc)
 #Here you must provide your googleAuth secrets in order to login to your organization's Gdrive
 options("googleAuthR.webapp.client_id" = "XXXX.apps.googleusercontent.com")
 options("googleAuthR.webapp.client_secret" = "XXXX")
