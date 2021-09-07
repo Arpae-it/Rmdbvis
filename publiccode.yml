@@ -19,6 +19,9 @@ description:
     shortDescription: |
       A tool to view and export MDB files without the need to install MS Access
 developmentStatus: stable
+screenshots:
+      - >-
+        screenshot.png
 it:
   conforme:
     gdpr: false
